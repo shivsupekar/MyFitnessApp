@@ -11,13 +11,19 @@ struct HomeView: View {
     @State  var Calories: Int = 123
     @State  var Active: Int = 52
     @State  var Stand: Int = 8
-    
+    var mockActivity = [
+       Activity(id: 0, title: "Today Steps", subtitle: "Goals 10,000", tintColor: .green, image: "figure.walk", amount: "6121"),
+       Activity(id: 1, title: "Today Steps", subtitle: "Goals 12,000", tintColor: .red, image: "figure.walk", amount: "2341"),
+       Activity(id: 2, title: "Today Steps", subtitle: "Goals 9,000", tintColor: .blue, image: "figure.walk", amount: "5432"),
+       Activity(id: 3, title: "Today Steps", subtitle: "Goals 40,000", tintColor: .purple, image: "figure.run", amount: "8625")
+    ]
     var body: some View {
         ScrollView(showsIndicators: false){
-            VStack{
+            VStack(alignment: .leading){
                 Text("Welcome".uppercased())
                     .font(.largeTitle)
                     .bold()
+                    .padding(.horizontal)
                 
                 HStack{
                     Spacer()
@@ -67,7 +73,28 @@ struct HomeView: View {
                     Spacer()
                 }
                 .padding()
-                    
+                HStack{
+                    Text("Fitness Acitivity")
+                        .font(.title2)
+                    Spacer()
+                    Button{
+                    print("Show More")
+                    } label: {
+                        Text("Show More")
+                            .padding(.all,10)
+                            .foregroundStyle(.white)
+                            .background(.blue)
+                            .cornerRadius(20)
+                    }
+                }
+                .padding(.horizontal)
+                
+                LazyVGrid(columns: Array(repeating: GridItem(spacing: 20), count: 2)) {
+                    ForEach(mockActivity, id: \.id){ card in
+                        ActivityCard(activity: card)
+                    }
+                }
+                .padding()
             }
         }
     }
