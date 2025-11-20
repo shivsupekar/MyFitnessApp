@@ -6,15 +6,6 @@
 //
 
 import SwiftUI
-struct Workout {
-    var id: Int
-    var title: String
-    var duration: String
-    var date: String
-    var calories: String
-    var image: String
-    var tintColor : Color
-}
 struct WorkoutCard: View {
     @State var workout : Workout
     var body: some View {

